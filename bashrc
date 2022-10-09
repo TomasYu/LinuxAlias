@@ -126,3 +126,9 @@ alias a='echo "------------Your aliases------------";alias'
 alias sa='source ~/.bash_aliases;echo "Bash aliases sourced."'
 #Edit Aliases
 alias via='gedit ~/.bashrc &'
+
+alias untar='tar -zxvf $1'  
+alias tar='tar -czvf $1'
+#Apply changes to aliases
+alias sbs='source ~/.bashrc'  
+alias uj="rm -rf temp | unzip -j -o $1 -d temp"
