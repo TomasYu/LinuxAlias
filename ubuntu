@@ -1,4 +1,18 @@
 1.搜狗输入法
 https://pinyin.sogou.com/linux/help.php
 
-2.
+2.adb
+Ubuntu Linux: There are two things that need to be set up correctly: each user that wants to use adb needs to be in the plugdev group, and the system needs to have udev rules installed that cover the device.
+
+plugdev group: If you see an error message that says you're not in the plugdev group, you'll need to add yourself to the plugdev group:
+
+
+sudo usermod -aG plugdev $LOGNAME
+
+
+Note that groups only get updated on login, so you'll need to log out for this change to take effect. When you log back in, you can use id to check that you're now in the plugdev group.
+
+udev rules: The android-sdk-platform-tools-common package contains a community-maintained default set of udev rules for Android devices. To install:
+
+
+apt-get install android-sdk-platform-tools-common
