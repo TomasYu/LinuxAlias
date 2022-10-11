@@ -132,3 +132,4 @@ alias tar='tar -czvf $1'
 #Apply changes to aliases
 alias sbs='source ~/.bashrc'  
 alias uj="rm -rf temp | unzip -j -o $1 -d temp"
+alias install="sudo apt install $1"
