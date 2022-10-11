@@ -16,3 +16,8 @@ udev rules: The android-sdk-platform-tools-common package contains a community-m
 
 
 apt-get install android-sdk-platform-tools-common
+
+
+3.禁用Ctrl+Alt+Left/Right
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
