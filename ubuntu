@@ -29,3 +29,16 @@ https://blog.csdn.net/yjp19871013/article/details/126031527
 
 No candidate version found for qt5-default:
 sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+
+caoxinyu@caoxinyu-Mi-Laptop-Pro-15:~$ sudo apt-get -y install fcitx-config-gtk2
+[sudo] password for caoxinyu: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Package fcitx-config-gtk2 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'fcitx-config-gtk2' has no installation candidate
+
+这个包应该在22.04 不需要了
