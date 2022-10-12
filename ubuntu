@@ -21,3 +21,7 @@ apt-get install android-sdk-platform-tools-common
 3.禁用Ctrl+Alt+Left/Right
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
+
+
+4.百度输入法
+http://srf.baidu.com/site/guanwang_linux/index.html
