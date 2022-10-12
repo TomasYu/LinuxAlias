@@ -42,3 +42,6 @@ is only available from another source
 E: Package 'fcitx-config-gtk2' has no installation candidate
 
 这个包应该在22.04 不需要了
+
+5.clrt alt s 被占用问题
+http://t.zoukankan.com/luocaodan-p-10494354.html
