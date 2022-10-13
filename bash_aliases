@@ -133,3 +133,11 @@ alias tar='tar -czvf $1'
 alias sbs='source ~/.bashrc'  
 alias uj="rm -rf temp | unzip -j -o $1 -d temp"
 alias install="sudo apt install $1"
+
+alias light="adb shell cmd uimode night no"
+alias night="adb shell cmd uimode night yes"
+alias spp="git stash;git pull;git stash pop"
+
+
+
+
