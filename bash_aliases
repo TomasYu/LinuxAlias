@@ -138,6 +138,7 @@ alias light="adb shell cmd uimode night no"
 alias night="adb shell cmd uimode night yes"
 alias spp="git stash;git pull;git stash pop"
 
+alias ains="adb install -r -t $1"
 
 
 
