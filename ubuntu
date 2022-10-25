@@ -48,3 +48,29 @@ http://t.zoukankan.com/luocaodan-p-10494354.html
 
 
 6.install mpv
+
+7. 扩大swap方法
+测试环境：Ubuntu 18.04
+# 将现有swap移动到主内存，可能需要几分钟
+sudo swapoff -a
+
+# 创建新的swap文件，bs×count=最后生成的swap大小，这里设置8G
+sudo dd if=/dev/zero of=/swapfile bs=1G count=8
+
+# 设置权限
+sudo chmod 0600 /swapfile
+
+# 设置swap
+sudo mkswap /swapfile
+
+# 打开swap
+sudo swapon /swapfile
+
+# 检查设置是否有效
+grep Swap /proc/meminfo # 或者htop看一下
+
+# 设置永久有效
+sudo gedit /etc/fstab
+# 在末尾行加上 
+# /swapfile swap swap sw 0 0
+https://zhuanlan.zhihu.com/p/480903179
