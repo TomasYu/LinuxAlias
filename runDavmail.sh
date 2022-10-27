@@ -1,2 +1,1 @@
-nohup davmail davmail.properties &
-
+nohup davmail ~/davmail.properties &
