@@ -74,3 +74,7 @@ sudo gedit /etc/fstab
 # 在末尾行加上 
 # /swapfile swap swap sw 0 0
 https://zhuanlan.zhihu.com/p/480903179
+
+
+8.在/etc/init.d/下创建可执行.sh文件
+nohup davmail davmail.properties &
