@@ -78,3 +78,38 @@ https://zhuanlan.zhihu.com/p/480903179
 
 8.在/etc/init.d/下创建可执行.sh文件
 nohup davmail davmail.properties &
+
+
+9.
+【MTK FlashTool】ERROR : STATUS_ERR (-1073676287) , MSP ERROE CODE : 0x00.
+第一步：
+
+sudo gedit /etc/udev/rules.d/53-android.rules
+
+添加：
+SUBSYSTEM=="usb", SYSFS{idVendor}=="0e8d", MODE="0666"
+SUBSYSTEM=="usb", ATTR{idVendor}="0e8d", ATTR{idProduct}="20ff", SYMLINK+="android_adb"
+
+第二步：
+
+sudo gedit /etc/udev/rules.d/53-MTKinc.rules
+
+添加：
+SUBSYSTEM=="usb", SYSFS{idVendor}=="0e8d", MODE="0666"
+SUBSYSTEM=="usb", ATTR{idVendor}="0e8d", ATTR{idProduct}="20ff", SYMLINK+="android_adb"
+KERNEL=="ttyACM*", MODE="0666"
+
+注意：idVendor  idProduct 通过命令lsusb可以获得。
+
+例如：
+
+Bus 001 Device 014: ID 0e8d:20ff MediaTek Inc.
+
+第三步：重新加载驱动
+
+　　sudo chmod a+rx /etc/udev/rules.d/53-android.rules
+        sudo chmod a+rx /etc/udev/rules.d/53-MTKinc.rules
+        sudo /etc/init.d/udev restart      
+        
+        
+https://caoxinyu.blog.csdn.net/article/details/127104728
