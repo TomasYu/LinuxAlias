@@ -24,6 +24,22 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
 
 
 4.百度输入法
+1. 安装fictx
+
+sudo apt-get install fcitx fcitx-table
+2. 安装qt5相关
+
+sudo apt-get install qtcreator qt5* qml-module-qtquick-controls2
+3. 修改配置，选择fictx
+
+im-config
+4. 安装百度拼音输入法
+
+sudo dpkg -i fcitx-baidupinyin.deb
+5. 修改fcitx配置
+
+右上角有个键盘图标，右键选择配置，然后将百度拼音调整为第一个，重启电脑，就会出现配置百度拼音输入法的向导
+
 http://srf.baidu.com/site/guanwang_linux/index.html
 https://blog.csdn.net/yjp19871013/article/details/126031527
 
