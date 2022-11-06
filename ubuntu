@@ -97,6 +97,7 @@ nohup davmail davmail.properties &
 
 
 9.
+注意：idVendor  idProduct 通过命令lsusb可以获得。
 【MTK FlashTool】ERROR : STATUS_ERR (-1073676287) , MSP ERROE CODE : 0x00.
 第一步：
 
