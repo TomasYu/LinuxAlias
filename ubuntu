@@ -1,5 +1,5 @@
 1.搜狗输入法
-https://pinyin.sogou.com/linux/help.php
+https://shurufa.sogou.com/linux/guide
 
 2.adb
 Ubuntu Linux: There are two things that need to be set up correctly: each user that wants to use adb needs to be in the plugdev group, and the system needs to have udev rules installed that cover the device.
