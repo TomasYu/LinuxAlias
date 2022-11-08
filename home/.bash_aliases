@@ -143,3 +143,4 @@ alias ains="adb install -r -t $1"
 
 alias arb="adb shell reboot"
 alias settings='adb shell am start -a android.settings.SETTINGS'
+alias ada="adb shell dumpsys activity activities"
