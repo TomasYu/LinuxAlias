@@ -147,6 +147,6 @@ export PATH=$PATH:~/Library/Android/Sdk/platform-tools/
 
 alias settings='adb shell am start -a android.settings.SETTINGS'
 
-alias ada="adb shell dumpsys activity activities"
+alias ada="adb shell dumpsys activity activities |grep Hist"
 
 
