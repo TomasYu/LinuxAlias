@@ -139,7 +139,8 @@ alias night="adb shell cmd uimode night yes"
 alias spp="git stash;git pull;git stash pop"
 
 alias ains="adb install -r -t $1"
-
+alias ada="adb shell dumpsys activity activities |grep Hist"
+alias amem="adb shell dumpsys meminfo"
 
 export PATH=$PATH:~/Library/Android/Sdk/platform-tools/
 
